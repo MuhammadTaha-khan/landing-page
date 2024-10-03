@@ -1,6 +1,6 @@
 // components/RideCard.tsx
 import React from "react";
-import { FaStar, FaUserAlt, FaPlus, FaBookmark } from "react-icons/fa";
+import { FaStar, FaPlus, FaBookmark } from "react-icons/fa";
 // import second from '../../public/animated1.png'
 import animated1 from "../../public/animated1.png";
 import animated2 from "../../public/animated2.png";
