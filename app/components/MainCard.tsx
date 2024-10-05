@@ -1,7 +1,6 @@
 
 
 // pages/Maincard.tsx
-import Head from 'next/head';
 import RideCard from './RideCard';
 
 const Home = () => {
