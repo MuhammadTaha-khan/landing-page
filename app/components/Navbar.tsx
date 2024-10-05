@@ -176,7 +176,7 @@
 
 
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import Image from "next/image";
 import logo from "../../public/logo.png";
