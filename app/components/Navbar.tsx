@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
       {/* Navigation Menu */}
       <div className={`${isMenuOpen ? "block" : "hidden"} -mt-16 py-3 max-sm:mt-0 max-lg:mt-0 max-sm:py-0 max-lg:py-0 lg:flex items-center justify-center w-full`}>
-        <ul className="flex flex-col px-4 py-2  font-medium border border-gray-100 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-200 dark:border-gray-200 md:px-4 md:py-2  lg:bg-gray-100 lg:rounded-3xl">
+        <ul className="flex flex-col px-4 py-2  font-medium border border-gray-100 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0  md:px-4 md:py-2  lg:bg-gray-100 lg:rounded-3xl">
           <li>
             <a
               href="#home"
