@@ -6,6 +6,7 @@ import MainCard from "./components/MainCard";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Fundraising from "./components/Fundraising";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Fundraising/>
       <FAQ/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

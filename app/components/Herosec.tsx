@@ -8,7 +8,7 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const Herosec: React.FC = () => {
   return (
-    <div className="container mx-auto mt-5">
+    <div className="container mx-auto mt-5" id="home">
       <section className=" bg-white py-16 px-4 flex flex-col md:flex-row items-center justify-round">
         {/* Left Side  */}
         {/* <div className="text-center md:text-left md:w-1/2"> */}

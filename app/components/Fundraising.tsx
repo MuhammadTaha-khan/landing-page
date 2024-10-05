@@ -38,8 +38,8 @@ const projects: Project[] = [
 
 const ProjectSection = () => {
   return (
-    <section id="Fundraising">
-      <div className="  pt-20 px-6 lg:px-24">
+    <section id="Fundraising ">
+      <div className="  pt-20 px-6 lg:px-24" id="fundraising">
         {projects.map((project, index) => (
           <div
             key={project.id}
@@ -55,19 +55,17 @@ const ProjectSection = () => {
               />
             </div>
             <div className="lg:w-1/2 px-4 flex flex-col ">
-              {/* <h3 className="text-3xl font-semibold mb-4">{project.title}</h3>
-              <p className="text-gray-400">{project.description}</p> */}
               <div className="max-w-md mx-auto p-6 bg-white ">
                 <div className="text-left">
                   <div className=" text-sm mb-8">
-                    <span className="py-1 px-3  border-2 border-black rounded-full">
+                    <span className="py-1 px-3  border-2 border-black rounded-full ">
                       {project.mintitle}
                     </span>
                   </div>
-                  <h2 className="text-2xl font-bold text-orange-500 mb-4">
+                  <h2 className="text-2xl font-bold text-orange-500 mb-4 font-tomorrow">
                     {project.title}
                   </h2>
-                  <p className="text-gray-400 mb-8">{project.description}</p>
+                  <p className="text-gray-500 mb-8">{project.description}</p>
                   <div className="flex items-center">
                     <Image
                       src={project.avgimage} // replace this with the correct image path
@@ -75,7 +73,7 @@ const ProjectSection = () => {
                       className="w-12 h-12 rounded-full"
                     />
                     <div className="ml-4">
-                      <p className="text-sm font-bold text-gray-800">
+                      <p className="text-sm font-bold text-gray-800 font-tomorrow">
                         Lara Croft
                       </p>
                       <p className="text-sm text-gray-500">Weekend Warrior</p>
@@ -83,10 +81,6 @@ const ProjectSection = () => {
                   </div>
                 </div>
               </div>
-              {/* <h3 className="text-5xl font-bold mb-6"> {`0${index + 1}`}</h3> */}
-              {/* <Link href={`/project/${project.id}`}>
-                <FiExternalLink className="mt-3 text-lg cursor-pointer text-white " />
-              </Link> */}
             </div>
           </div>
         ))}

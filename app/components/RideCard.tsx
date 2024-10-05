@@ -29,13 +29,21 @@ const RideCard: React.FC<RideCardProps> = ({
   price,
 }) => {
   return (
-    <div className="max-w-sm bg-white  rounded-lg overflow-hidden border-2 border-gray-300">
+    <>
+    <div className="max-w-lg md:max-w-sm bg-white  rounded-lg overflow-hidden border-2 border-gray-300">
       {/* Image Section */}
       <div className="relative">
-        <img src={imageUrl} alt={title} className="w-full h-38 object-cover  " />
+        {/* <img src={imageUrl} alt={title} className="w-full h-38 object-cover  " /> */}
+          <Image
+          src={imageUrl}
+          alt={title}
+          layout="responsive"
+          width={500}
+          height={300}
+        />
       </div>
       {/* Content Section */}
-      <div className="p-4 rounded-lg">
+      <div className="p-2 md:p-4 rounded-lg">
         <div className="flex flex-row justify-between items-center mb-4 mt-3">
           <h3 className="text-md font-tomorrow font-normal md:w-9/12 ">{title}</h3>
           <FaBookmark className="text-2xl text-gray-300 " />
@@ -84,7 +92,16 @@ const RideCard: React.FC<RideCardProps> = ({
         </div>
       </div>
     </div>
+    </>
   );
 };
 
 export default RideCard;
+
+
+
+
+
+
+
+

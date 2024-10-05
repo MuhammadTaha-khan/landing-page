@@ -5,15 +5,15 @@ import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-16" id="contact">
       {/* Sign up section */}
       <div className=" p-6">
         <div className="fotertop max-w-4xl mx-auto flex flex-col bg-yellow-400 p-6 rounded-md ">
           <div className="flex flex-col md:flex-row justify-between mb-8 ">
-            <h2 className="text-2xl font-bold md:w-6/12 ">
+            <h2 className="text-2xl font-bold md:w-6/12 font-tomorrow">
               Get running tips & tricks in your inbox every week.
             </h2>
-            <div className="text-md md:text-end md:ml-4 mt-6 md:mt-0">
+            <div className="text-md md:text-end md:ml-4 mt-6 md:mt-0 font-tomorrow">
               <p>You can unsubscribe at any time.</p>
               <p>We respect your privacy.</p>
             </div>
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-orange-600 text-white md:w-3/12  py-3  w-full rounded-md font-bold hover:bg-orange-500 transition-colors duration-300"
+              className="bg-orange-600 text-white md:w-3/12  py-3  w-full rounded-md font-bold hover:bg-orange-500 transition-colors duration-300 font-tomorrow"
             >
               Sign up
             </button>
@@ -40,26 +40,13 @@ const Contact: React.FC = () => {
         style={{ backgroundImage: "url('/contactbg.png')" }}
       >
         <div className="max-w-4xl mx-auto pt-44">
-          <h1 className="text-4xl md:text-5xl font-bold mb-7 md:mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-7 md:mb-16 font-tomorrow">
             Ready to Make a Difference?
           </h1>
           <div className="flex flex-col md:flex-row justify-between">
           <p className="text-2xl mb-6 md:w-6/12">
             Download the app and start your first challenge today.
           </p>
-          {/* <div className=" flex flex-col">
-            <p className="font-semibold mb-3">Available on</p>
-            <div className="flex justify-start gap-4 mb-4 ">
-              <button className="flex justify-center items-center space-x-2 bg-gray-500 px-4 py-1 rounded-2xl">
-                <FaApple className="" />
-                <span>Apple</span>
-              </button>
-              <button className="flex justify-center items-center space-x-2 bg-gray-500 px-4 py-1 rounded-2xl">
-                <FaGooglePlay />
-                <span>Google Play</span>
-              </button>
-            </div>
-          </div> */}
           <div className=" flex flex-col">
             <p className="font-bold mb-2 ml-2">Available on</p>
             <div className="flex justify-start gap-4 mb-8 ">

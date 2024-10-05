@@ -1,9 +1,5 @@
 // components/HowItWorks.tsx
 import React from 'react';
-// import search from '../../public/Howwork/search.png'
-// import setting from '../../public/Howwork/setting.png'
-// import Progress from '../../public/Howwork/Progress.png'
-// import Impact from '../../public/Howwork/Impact.png'
 
 interface Step {
   title: string;
@@ -41,7 +37,7 @@ const steps: Step[] = [
 
 const HowWorks: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8">
+    <div className="max-w-7xl mx-auto p-8" id='works'>
       <h2 className="text-center text-3xl font-bold text-primary font-tomorrow mt-14 mb-14">
         How It Works
       </h2>
