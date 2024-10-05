@@ -240,7 +240,7 @@ const Navbar: React.FC = () => {
           <p>For Fund</p>
         </a>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2">
           <div className="bg-primary text-white px-5 py-2 rounded-3xl">
             <Link href="/resume.pdf" download className="flex items-center">
               <span>Download now</span>
@@ -261,7 +261,7 @@ const Navbar: React.FC = () => {
 
       {/* Navigation Menu */}
       <div className={`${isMenuOpen ? "block" : "hidden"} -mt-16 py-3 max-sm:mt-0 max-lg:mt-0 max-sm:py-0 max-lg:py-0 lg:flex items-center justify-center w-full`}>
-        <ul className="flex flex-col px-4 py-2 rounded-full font-medium border border-gray-100 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-200 dark:border-gray-200 md:px-4 md:py-2 md:rounded-3xl lg:bg-gray-100">
+        <ul className="flex flex-col px-4 py-2  font-medium border border-gray-100 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-200 dark:border-gray-200 md:px-4 md:py-2  lg:bg-gray-100">
           <li>
             <a
               href="#home"
