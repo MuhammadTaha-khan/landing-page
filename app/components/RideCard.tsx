@@ -16,6 +16,7 @@ interface RideCardProps {
   distance: string;
   duration: string;
   price: string;
+  cardPosition: string;
 }
 
 const RideCard: React.FC<RideCardProps> = ({
@@ -27,43 +28,52 @@ const RideCard: React.FC<RideCardProps> = ({
   distance,
   duration,
   price,
+  cardPosition
 }) => {
   return (
-    <>
-    <div className="max-w-lg md:max-w-sm bg-white  rounded-lg overflow-hidden border-2 border-gray-300">
-      {/* Image Section */}
-      <div className="relative">
-        {/* <img src={imageUrl} alt={title} className="w-full h-38 object-cover  " /> */}
-          <Image
-          src={imageUrl}
-          alt={title}
-          layout="responsive"
-          width={500}
-          height={300}
-        />
+    <div className="max-w-lg md:max-w-sm bg-white  rounded-lg overflow-hidden ">
+
+      <div className=" rounded-lg">
+        <img src={imageUrl} alt={title} className="w-full h-38 object-cover " />
       </div>
-      {/* Content Section */}
-      <div className="p-2 md:p-4 rounded-lg">
-        <div className="flex flex-row justify-between items-center mb-4 mt-3">
-          <h3 className="text-md font-tomorrow font-normal md:w-9/12 ">{title}</h3>
+      <div className="relative border  bg-white  -mt-2 p-2 md:p-4 rounded-lg">
+        <div className="flex flex-row justify-between items-center mb-2 ">
+          <h3 className="text-md font-tomorrow font-bold md:w-9/12 ">{title}</h3>
           <FaBookmark className="text-2xl text-gray-300 " />
         </div>
-        <p className="text-sm text-gray-500">{location}</p>
+        <p className="text-sm text-gray-500 mt-0">{location}</p>
+        {
+          (cardPosition !== "mid") ?
+            <div className="flex items-center space-x-3 mt-3 mb-3">
+              <div className="flex items-center text-yellow-500">
+                <FaStar />
+                <span className="ml-1 text-sm text-black">{rating}</span>
+                <span className="ml-1 text-black">({reviews})</span>
+              </div>
+              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{distance}</span>
+              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{duration}</span>
+            </div>
+            :
+            <div className="flex items-center space-x-7 mt-3 ">
+              <div className="flex flex-col items-start justify-start mb-1" >
+                <span className="text-sm">Distance</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{distance}</span>
+              </div>
 
-        {/* Rating and Info */}
-        <div className="flex items-center space-x-3 mt-3 mb-6">
-          <div className="flex items-center text-yellow-500">
-            <FaStar />
-            <span className="ml-1 text-sm text-black">{rating}</span>
-            <span className="ml-1 text-black">({reviews})</span>
-          </div>
-          <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{distance}</span>
-          <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{duration}</span>
-        </div>
+              <div className="flex flex-col items-start justify-start mb-1" >
+                <span className="text-sm">Place</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{distance}</span>
+              </div>
 
-        {/* Avatars and Price */}
+              <div className="flex flex-col items-start justify-start mb-1" >
+                <span className="text-sm">Time</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{duration.split("Est.")[1]}</span>
+              </div>
+
+            </div>
+        }
         <div className="flex items-center justify-between mt-3">
-        <div className="flex items-center justify-start gap-2">
+          <div className="flex items-center justify-start gap-2">
             <div className="flex -space-x-2">
               <Image
                 src={animated1}
@@ -83,25 +93,20 @@ const RideCard: React.FC<RideCardProps> = ({
               <FaPlus className="w-9  h-9 rounded-full bg-yellow-500 p-2 mt-0.5 text-white " />
             </div>
           </div>
-          {/* <div className="flex -space-x-2">
- 
-          </div> */}
-          <div className="bg-primary text-white px-4 py-2 rounded-lg font-semibold">
-            {price}
-          </div>
+          {
+            cardPosition == "left" ?
+              <div className="bg-gray-200 text-black px-4 py-2 rounded-lg font-semibold">
+                {"Free"}
+              </div> :
+              <div className="bg-primary text-white px-4 py-2 rounded-lg font-semibold">
+                {price}
+              </div>
+          }
+
         </div>
       </div>
     </div>
-    </>
   );
 };
 
 export default RideCard;
-
-
-
-
-
-
-
-
