@@ -1,4 +1,3 @@
-// components/RideCard.tsx
 import React from "react";
 import { FaStar, FaPlus, FaBookmark } from "react-icons/fa";
 // import second from '../../public/animated1.png'

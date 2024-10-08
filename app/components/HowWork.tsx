@@ -1,4 +1,3 @@
-// components/HowItWorks.tsx
 import React from 'react';
 
 interface Step {
