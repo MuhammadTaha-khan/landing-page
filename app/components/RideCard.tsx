@@ -32,42 +32,59 @@ const RideCard: React.FC<RideCardProps> = ({
 }) => {
   return (
     <div className="max-w-lg md:max-w-sm bg-white  rounded-lg overflow-hidden ">
-
       <div className=" rounded-lg">
         <img src={imageUrl} alt={title} className="w-full h-38 object-cover " />
       </div>
       <div className="relative border  bg-white  -mt-2 p-2 md:p-4 rounded-lg">
         <div className="flex flex-row justify-between items-center mb-2 ">
-          <h3 className="text-md font-tomorrow font-bold md:w-9/12 ">{title}</h3>
+          <h3 className="text-md font-tomorrow font-bold md:w-9/12"
+            dangerouslySetInnerHTML={{ __html: title }}
+          ></h3>
           <FaBookmark className="text-2xl text-gray-300 " />
         </div>
-        <p className="text-sm text-gray-500 mt-0">{location}</p>
+        <p className="text-sm text-gray-500 mt-0"
+          dangerouslySetInnerHTML={{ __html: location }}
+        ></p>
         {
           (cardPosition !== "mid") ?
             <div className="flex items-center space-x-3 mt-3 mb-3">
               <div className="flex items-center text-yellow-500">
                 <FaStar />
-                <span className="ml-1 text-sm text-black">{rating}</span>
-                <span className="ml-1 text-black">({reviews})</span>
+                <span className="ml-1 text-sm text-black"
+                  dangerouslySetInnerHTML={{ __html: rating }}
+                ></span>
+                <span className="ml-1 text-black"
+                  dangerouslySetInnerHTML={{ __html: reviews }}
+                ></span>
               </div>
-              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{distance}</span>
-              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold">{duration}</span>
+              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold"
+                dangerouslySetInnerHTML={{ __html: distance }}
+              ></span>
+              <span className="text-sm text-black bg-gray-200  px-4 py-2 rounded-lg font-semibold"
+                dangerouslySetInnerHTML={{ __html: duration }}
+              ></span>
             </div>
             :
             <div className="flex items-center space-x-7 mt-3 ">
               <div className="flex flex-col items-start justify-start mb-1" >
                 <span className="text-sm">Distance</span>
-                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{distance}</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold"
+                  dangerouslySetInnerHTML={{ __html: distance }}
+                ></span>
               </div>
 
               <div className="flex flex-col items-start justify-start mb-1" >
                 <span className="text-sm">Place</span>
-                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{distance}</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold"
+                  dangerouslySetInnerHTML={{ __html: duration }}
+                ></span>
               </div>
 
               <div className="flex flex-col items-start justify-start mb-1" >
                 <span className="text-sm">Time</span>
-                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold">{duration.split("Est.")[1]}</span>
+                <span className="text-lg text-black bg-transparent    rounded-lg font-semibold"
+                  dangerouslySetInnerHTML={{ __html: duration.split("Est.")[1] }}
+                ></span>
               </div>
 
             </div>
@@ -98,8 +115,9 @@ const RideCard: React.FC<RideCardProps> = ({
               <div className="bg-gray-200 text-black px-4 py-2 rounded-lg font-semibold">
                 {"Free"}
               </div> :
-              <div className="bg-primary text-white px-4 py-2 rounded-lg font-semibold">
-                {price}
+              <div className="bg-primary text-white px-4 py-2 rounded-lg font-semibold"
+                dangerouslySetInnerHTML={{ __html: price }}
+              >
               </div>
           }
 
@@ -110,3 +128,11 @@ const RideCard: React.FC<RideCardProps> = ({
 };
 
 export default RideCard;
+
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@ const Herosec: React.FC = () => {
       <section className=" bg-white py-16 px-4 flex flex-col md:flex-row items-center justify-round">
         {/* Left Side  */}
         {/* <div className="text-center md:text-left md:w-1/2"> */}
-        <div className="text-start md:w-1/2">
+        <div className="text-start md:w-1/2 mt-14">
           <h1 className="text-4xl font-bold font-tomorrow leading-tight text-primary  mb-6">
             Challenge Yourself,
             <br /> Change the World
@@ -22,9 +22,10 @@ const Herosec: React.FC = () => {
             exciting physical challenges.
           </p>
           {/* App store buttons */}
-          <div className=" flex flex-col">
-            <p className="font-bold mb-2 ml-2">Available on</p>
-            <div className="flex justify-start gap-4 mb-8 ">
+          <div className="flex justify-center items-center custom-border curved-component curved-component-outside">
+            <div className="flex flex-col curved-component curved-component-inside p-3">
+            <p className="font-bold  mb-2 ml-2">Available on</p>
+            <div className="flex justify-start gap-4 mb-8  pt-2">
               <button className="flex justify-center items-center space-x-2 bg-primary text-white px-6 py-1.5 rounded-3xl">
                 <FaGooglePlay />
                 <span>Google Play</span>
@@ -34,9 +35,12 @@ const Herosec: React.FC = () => {
                 <span>App Store</span>
               </button>
             </div>
+          </div> 
+           
           </div>
+
           {/* Active users info */}
-          <div className="flex items-center justify-start gap-2">
+          <div className="flex items-center justify-start gap-2 mt-10">
             <div className="flex -space-x-2">
               <Image
                 src={animated1}

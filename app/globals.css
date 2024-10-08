@@ -28,3 +28,89 @@
 .foterbottom{
   position: relative;
 }
+
+
+
+/* Ensure the navigation buttons are visible */
+.swiper-button-next, .swiper-button-prev {
+  display: block !important; /* Force the buttons to display */
+  color: gray  !important; /* Adjust color if needed */
+  z-index: 10; /* Ensure they are above the slides */
+  opacity: 1; /* Ensure full visibility */
+
+}
+
+/* Position the buttons properly */
+.swiper-button-prev {
+  left: 10px; /* Adjust left positioning */
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust right positioning */
+}
+
+/* Make sure buttons are positioned properly on larger screens */
+@media (min-width: 1024px) {
+  .swiper-button-next, .swiper-button-prev {
+    top: 50%;
+    transform: translateY(10%) !important;
+  }
+}
+
+
+
+.custom-border {
+  width: 350px;
+  height: 110px; 
+  position: relative;
+  background: #FF6600;
+  border-radius: 20px; 
+}
+
+.curved-component{
+  /* clip-path: polygon(41% 29%, 100% 32%, 100% 100%, 0 100%, 0 0) !important; */
+  clip-path: polygon(0 0, 30% 0, 60% 21%, 100% 23%, 100% 100%, 0 100%) !important;
+  -webkit-clip-path: polygon(0 0, 32% 0, 38% 30%, 100% 30%, 100% 100%, 0 100%) !important;
+  /* -webkit-clip-path: polygon(41% 29%, 100% 32%, 100% 100%, 0 100%, 0 0) !important; */
+  border-radius: 20px; 
+}
+
+.curved-component-inside {
+  width: 347px;
+  height: 105px;
+  background: white;
+  border-radius: 20px;
+}
+
+
+/* -------------------------------------------------------------contect */
+
+
+.custom-borders {
+  width: 360px;
+  height: 110px; 
+  position: relative;
+  background: white;
+  border-radius: 20px; 
+}
+
+.curved-components{
+  /* clip-path: polygon(41% 29%, 100% 32%, 100% 100%, 0 100%, 0 0) !important; */
+  clip-path: polygon(0 0, 30% 0, 60% 21%, 100% 23%, 100% 100%, 0 100%) !important;
+  -webkit-clip-path: polygon(0 0, 32% 0, 38% 30%, 100% 30%, 100% 100%, 0 100%) !important;
+  /* -webkit-clip-path: polygon(41% 29%, 100% 32%, 100% 100%, 0 100%, 0 0) !important; */
+  border-radius: 20px; 
+}
+
+.curved-component-insides {
+  width: 357px;
+  height: 105px;
+  background: #f0672b;
+  border-radius: 20px;
+}
+
+
+
+
+
+

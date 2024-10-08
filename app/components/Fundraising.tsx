@@ -6,13 +6,19 @@ import Image, { StaticImageData } from "next/image";
 // import { FiExternalLink } from "react-icons/fi";
 // import Link from "next/link";
 
+interface Auth {
+  avgimage: string | StaticImageData;
+  authtitle: string;
+  authdescription: string;
+}
+
 interface Project {
   id: number;
   mintitle: string;
   title: string;
   description: string;
   imageUrl: string | StaticImageData;
-  avgimage: string | StaticImageData;
+  auth: Auth | null;
 }
 
 const projects: Project[] = [
@@ -23,7 +29,7 @@ const projects: Project[] = [
     description:
       "Share your challenge on social media, track donations, and thank your supporters directly through the app.",
     imageUrl: fundracing1,
-    avgimage: fundracing,
+    auth: null
   },
   {
     id: 2,
@@ -32,7 +38,11 @@ const projects: Project[] = [
     description:
       "and raise money for a cause I care about. The challenges were fun and engaging, and I felt a sense of accomplishment with every step I took. I loved every minute of it!",
     imageUrl: fundracing2,
-    avgimage: fundracing,
+    auth: {
+      avgimage: fundracing,
+      authtitle:"Lara Croft",
+      authdescription:"Weekend Warrior"
+    }
   },
 ];
 
@@ -66,19 +76,19 @@ const ProjectSection = () => {
                     {project.title}
                   </h2>
                   <p className="text-gray-500 mb-8">{project.description}</p>
-                  <div className="flex items-center">
+                  {project.auth && (<div className="flex items-center">
                     <Image
-                      src={project.avgimage} // replace this with the correct image path
+                      src={project.auth.avgimage} // replace this with the correct image path
                       alt="Lara Croft"
                       className="w-12 h-12 rounded-full"
                     />
                     <div className="ml-4">
                       <p className="text-sm font-bold text-gray-800 font-tomorrow">
-                        Lara Croft
+                        {project.auth.authtitle}
                       </p>
-                      <p className="text-sm text-gray-500">Weekend Warrior</p>
+                      <p className="text-sm text-gray-500">{project.auth.authdescription}</p>
                     </div>
-                  </div>
+                  </div>)}
                 </div>
               </div>
             </div>

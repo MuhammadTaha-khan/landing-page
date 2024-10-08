@@ -47,9 +47,10 @@ const Contact: React.FC = () => {
           <p className="text-2xl mb-6 md:w-6/12">
             Download the app and start your first challenge today.
           </p>
-          <div className=" flex flex-col">
+          <div className="flex justify-center items-center custom-borders curved-components curved-component-outsides">
+            <div className="flex flex-col curved-components curved-component-insides p-3"> 
             <p className="font-bold mb-2 ml-2">Available on</p>
-            <div className="flex justify-start gap-4 mb-8 ">
+            <div className="flex justify-start gap-4 mb-8 pt-2">
               <button className="flex justify-center items-center space-x-2 bg-white text-primary  font-bold px-6 py-1.5 rounded-3xl">
                 <FaGooglePlay />
                 <span>Google Play</span>
@@ -58,6 +59,7 @@ const Contact: React.FC = () => {
                 <FaApple />
                 <span>App Store</span>
               </button>
+            </div>
             </div>
           </div>
           </div>
