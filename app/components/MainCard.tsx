@@ -19,6 +19,7 @@ const Home = () => {
       price: '4,99 €',
       cardPosition: 'left',
     },
+
     {
       imageUrl: '/card2.png',
       title: 'Gislon Botanical Garden - Colle San Giorgio',
@@ -41,6 +42,7 @@ const Home = () => {
       price: '3,99 €',
       cardPosition: 'right',
     },
+
     {
       imageUrl: '/card1.png',
       title: 'Tokyo Moonlight Marathon - Colle San Giorgio',

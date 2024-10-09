@@ -50,12 +50,12 @@ const Contact: React.FC = () => {
           <div className="flex justify-center items-center custom-borders curved-components curved-component-outsides">
             <div className="flex flex-col curved-components curved-component-insides p-3"> 
             <p className="font-bold mb-2 ml-2">Available on</p>
-            <div className="flex justify-start gap-4 mb-8 pt-2">
-              <button className="flex justify-center items-center space-x-2 bg-white text-primary  font-bold px-6 py-1.5 rounded-3xl">
+            <div className="flex justify-start gap-2 mb-8 pt-2">
+              <button className="flex justify-center items-center space-x-2 bg-white text-primary  font-bold px-5 py-1.5 rounded-3xl">
                 <FaGooglePlay />
                 <span>Google Play</span>
               </button>
-              <button className="flex justify-center items-center space-x-2 text-white border-white border-2  font-bold px-6 py-1.5 rounded-3xl">
+              <button className="flex justify-center items-center space-x-2 text-white border-white border-2  font-bold px-5 py-1.5 rounded-3xl">
                 <FaApple />
                 <span>App Store</span>
               </button>

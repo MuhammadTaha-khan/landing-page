@@ -85,7 +85,6 @@ const RideCard: React.FC<RideCardProps> = ({
                   dangerouslySetInnerHTML={{ __html: duration.split("Est.")[1] }}
                 ></span>
               </div>
-
             </div>
         }
         <div className="flex items-center justify-between mt-3">
