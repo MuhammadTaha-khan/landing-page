@@ -72,11 +72,11 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden">
             <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
               onClick={handleMenuToggle}
             >
               <span className="sr-only">Open main menu</span>
-              <CgMenuGridO className="text-2xl font-bold text-black dark:text-white" />
+              <CgMenuGridO className="text-2xl font-bold text-black " />
             </button>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
             <a
               href="#home"
               onClick={(e) => handleSmoothScroll(e, "home")}
-              className={`block py-2 px-3 rounded ${activeSection === 'home' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'home' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               Home
             </a>
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             <a
               href="#about"
               onClick={(e) => handleSmoothScroll(e, "about")}
-              className={`block py-2 px-3 rounded ${activeSection === 'about' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'about' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               About
             </a>
@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
             <a
               href="#works"
               onClick={(e) => handleSmoothScroll(e, "works")}
-              className={`block py-2 px-3 rounded ${activeSection === 'works' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'works' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               How it works
             </a>
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
             <a
               href="#challenges"
               onClick={(e) => handleSmoothScroll(e, "challenges")}
-              className={`block py-2 px-3 rounded ${activeSection === 'challenges' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'challenges' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               Challenges
             </a>
@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
             <a
               href="#fundraising"
               onClick={(e) => handleSmoothScroll(e, "fundraising")}
-              className={`block py-2 px-3 rounded ${activeSection === 'fundraising' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'fundraising' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               Fundraising
             </a>
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
             <a
               href="#faq"
               onClick={(e) => handleSmoothScroll(e, "faq")}
-              className={`block py-2 px-3 rounded ${activeSection === 'faq' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'faq' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               FAQ
             </a>
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               onClick={(e) => handleSmoothScroll(e, "contact")}
-              className={`block py-2 px-3 rounded ${activeSection === 'contact' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 dark:text-white`}
+              className={`block py-2 px-3 rounded ${activeSection === 'contact' ? 'text-primary font-bold' : 'text-black'} lg:bg-transparent lg:p-0 `}
             >
               Contact
             </a>

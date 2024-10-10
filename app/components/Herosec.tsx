@@ -17,14 +17,14 @@ const Herosec: React.FC = () => {
             Challenge Yourself,
             <br /> Change the World
           </h1>
-          <p className="text-gray-500 mb-6 w-10/12">
+          <p className="text-gray-500 mb-6 w-10/12 leading-8">
             Join our community to raise funds for causes you care about through
             exciting physical challenges.
           </p>
           {/* App store buttons */}
-          <div className="flex justify-center items-center custom-border curved-component curved-component-outside">
+          <div className="flex justify-center items-center custom-border curved-component curved-component-outside mt-16">
             <div className="flex flex-col curved-component curved-component-inside p-3">
-            <p className="font-bold  mb-2 ml-2">Available on</p>
+            <p className="font-bold font-tomorrow mb-2 ml-2 ">Available on</p>
             <div className="flex justify-start gap-4 mb-8  pt-2">
               <button className="flex justify-center items-center space-x-2 bg-primary text-white px-6 py-1.5 rounded-3xl">
                 <FaGooglePlay />
@@ -40,7 +40,7 @@ const Herosec: React.FC = () => {
           </div>
 
           {/* Active users info */}
-          <div className="flex items-center justify-start gap-2 mt-10">
+          <div className="flex items-center justify-start gap-2 mt-8">
             <div className="flex -space-x-2">
               <Image
                 src={animated1}

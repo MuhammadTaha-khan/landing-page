@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     <div className="w-full mt-16" id="contact">
       {/* Sign up section */}
       <div className=" p-6">
-        <div className="fotertop max-w-4xl mx-auto flex flex-col bg-yellow-400 p-6 rounded-md ">
+        <div className="fotertop max-w-4xl mx-auto flex flex-col bg-yellow-400 p-6 rounded-2xl ">
           <div className="flex flex-col md:flex-row justify-between mb-8 ">
             <h2 className="text-2xl font-bold md:w-6/12 font-tomorrow">
               Get running tips & tricks in your inbox every week.
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           </p>
           <div className="flex justify-center items-center custom-borders curved-components curved-component-outsides">
             <div className="flex flex-col curved-components curved-component-insides p-3"> 
-            <p className="font-bold mb-2 ml-2">Available on</p>
+            <p className="font-semibold mb-2 ml-2 font-tomorrow">Available on</p>
             <div className="flex justify-start gap-2 mb-8 pt-2">
               <button className="flex justify-center items-center space-x-2 bg-white text-primary  font-bold px-5 py-1.5 rounded-3xl">
                 <FaGooglePlay />

@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-300 mb-4 pb-4 px-5 pt-3 group hover:bg-gray-100 cursor-pointer"
+            className="border border-gray-300 mb-4 pb-4 px-5 pt-3 group hover:bg-gray-100 cursor-pointer rounded-lg"
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
