@@ -71,7 +71,7 @@ const ProjectSection = () => {
                   <Image
                     src={project.auth.iconimg}
                     alt={project.auth.authtitle}
-                    className="flex w-28 h-7 pt-3"
+                    className="flex w-30 h-7 pt-3"
                   />
                 </div>
               )}

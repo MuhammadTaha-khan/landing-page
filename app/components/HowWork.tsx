@@ -44,13 +44,13 @@ const HowWorks: React.FC = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-[#F7F7F7] shadow-sm rounded-lg p-4 flex flex-col justify-start h-[330px] "
+            className="bg-[#F7F7F7] shadow-sm  rounded-lg p-4 flex flex-col justify-start h-[330px] "
           >
             <div className="mt-6 mb-6">
               <img src={step.icon} alt={step.title} className="w-14 h-14" />
             </div>
             <div className='flex justify-between items-center mb-6'>
-              <h3 className="font-tomorrow  mb-2 font-semibold">{step.title}</h3>
+              <h3 className="font-tomorrow   mb-2 font-bold">{step.title}</h3>
               <div className="bg-gray-200 font-normal text-xl px-1.5 py-1 rounded-full font-tomorrow">
                 {step.number}
               </div>

@@ -1,3 +1,4 @@
+// RideCard 
 import React from "react";
 import { FaStar, FaPlus, FaBookmark } from "react-icons/fa";
 // import second from '../../public/animated1.png'
@@ -39,7 +40,7 @@ const RideCard: React.FC<RideCardProps> = ({
           <h3 className="text-md font-tomorrow font-bold md:w-9/12"
             dangerouslySetInnerHTML={{ __html: title }}
           ></h3>
-          <FaBookmark className="text-2xl text-gray-300 " />
+          <FaBookmark className="text-2xl text-gray-300 "/>
         </div>
         <p className="text-sm text-gray-500 mt-0"
           dangerouslySetInnerHTML={{ __html: location }}
